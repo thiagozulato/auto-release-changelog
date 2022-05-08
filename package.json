@@ -22,7 +22,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "release": "standard-version",
-    "commit": "cz"
+    "commit": "cz",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -43,8 +44,11 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4",
     "standard-version": "^9.3.2"
   },
   "config": {
